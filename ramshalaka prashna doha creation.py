@@ -1,50 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[43]:
-
-
-def ramshalaka_prashnavali():    
-    try:
-        n = int(input("please select any number between 1 to 225: "))
-        if n > 225:
-            print("provide values between 1 to 225")
-    except ValueError:
-        print("That's not an int!")
-        
-    start = n
-    step = 9
-    code = []
-    
-    while True:
-        code.append(n)
-        n = n+step
-
-        #print("n:" + str(n))
-        #print(code)
-
-        if n > 225:
-            n = ((n-9)-225)+9
-        if n == start:
-            print(code)
-            break
-
-
-# In[45]:
-
-
-ramshalaka_prashnavali()
-
-
-# In[46]:
-
-
-ramshalaka_prashnavali()
-
-
-# In[23]:
-
-
 def ramshalaka_prashnavali(n):    
     try:
         if n > 225:
@@ -92,41 +48,5 @@ def ramshalaka_prashnavali(n):
     #for i in code:
      #   chopai.append(desc[i])
     print(chopai)
-        
-
-
-# In[24]:
-
 
 ramshalaka_prashnavali(1)
-
-
-# In[25]:
-
-
-ramshalaka_prashnavali(2)
-
-
-# In[26]:
-
-
-15*7
-
-
-# In[27]:
-
-
-ramshalaka_prashnavali(102)
-
-
-# In[28]:
-
-
-pwd
-
-
-# In[ ]:
-
-
-
-
